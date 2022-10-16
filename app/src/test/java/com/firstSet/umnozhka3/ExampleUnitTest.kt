@@ -1,4 +1,4 @@
-package com.example.umnozhka3
+package com.firstSet.umnozhka3
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.example.umnozhka3
+package com.firstSet.umnozhka3
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,7 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.umnozhka3.databinding.FragmentFirstBinding
+import com.firstSet.umnozhka3.R
+import com.firstSet.umnozhka3.databinding.FragmentFirstBinding
 import java.io.*
 
 

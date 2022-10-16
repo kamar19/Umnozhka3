@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.umnozhka3"
+        applicationId "com.firstSet.umnozhka3"
         minSdk 21
         targetSdk 32
         versionCode 1
