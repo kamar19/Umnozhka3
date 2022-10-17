@@ -2,26 +2,33 @@
 buildscript {
     repositories {
         maven { url 'https://maven.fabric.io/public' }
+        google()  // Google's Maven repository
+
+        mavenCentral()  // Maven Central repository
 
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.2.1'
         classpath 'io.fabric.tools:gradle:1.31.2'
+        // Add the dependencies for the Crashlytics and Analytics libraries
+        // When NOT using the BoM, you must specify versions in Firebase library dependencies
+        // Make sure that you have the Google services Gradle plugin dependency
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        // Add the dependency for the Crashlytics Gradle plugin
+        classpath 'com.google.gms:google-services:4.3.14'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.2'
     }
 }
 
+    plugins {
+        id 'com.android.application' version '7.2.1' apply false
+        id 'com.android.library' version '7.2.1' apply false
+        id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
 
-plugins {
-    id 'com.android.application' version '7.2.1' apply false
-    id 'com.android.library' version '7.2.1' apply false
-    id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
-}
+    }
 
-apply from: 'ci.gradle'
+    apply from: 'ci.gradle'
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
+    task clean(type: Delete) {
+        delete rootProject.buildDir
+    }

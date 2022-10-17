@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "70968624253",
+    "project_id": "umnozhka3",
+    "storage_bucket": "umnozhka3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70968624253:android:c14bd30f6e347d0cd91d14",
+        "android_client_info": {
+          "package_name": "com.firstSet.umnozhka3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70968624253-8se17p2cel4l35rhb7ejnmsaj1ajui0m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ77-6AAvblQfr8Lvp24Ky5Tx73RvCojA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70968624253-8se17p2cel4l35rhb7ejnmsaj1ajui0m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

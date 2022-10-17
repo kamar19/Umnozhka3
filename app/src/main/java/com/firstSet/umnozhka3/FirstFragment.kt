@@ -37,6 +37,9 @@ class FirstFragment : Fragment() {
         binding.buttonFirst.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
+        binding.buttonCrash.setOnClickListener {
+            throw RuntimeException("Test Crash") // Force a crash
+        }
     }
 
     override fun onDestroyView() {
