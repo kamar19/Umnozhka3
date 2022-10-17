@@ -1,0 +1,8 @@
+general:
+artifacts:
+    - /home/ubuntu/Umnozhka3/app/build/outputs/apk/
+deployment:
+        beta:
+          branch: master
+          commands:
+            - cd scripts && ./build.sh
